@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ElementsHomeComponent } from './elements-home/elements-home.component';
+import { WysiwygHomeComponent } from './wysiwyg-home/wysiwyg-home.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ElementsHomeComponent,
+    path: 'wysiwyg',
+    component: WysiwygHomeComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ElementsRoutingModule {}
+export class WysiwygRoutingModule {}
