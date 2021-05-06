@@ -1,3 +1,17 @@
-<a routerLink="/elements">Elements</a>&nbsp;
-<a routerLink="/collections">Collections</a>
-<router-outlet></router-outlet>
+<div class="container">
+  <nav class="nav nav-pills">
+    <a class="nav-link" routerLink="/elements" routerLinkActive="active"
+      >Elements</a
+    >
+    <a class="nav-link" routerLink="/collections" routerLinkActive="active"
+      >Collections</a
+    >
+  </nav>
+  <hr class="my-4" />
+  <!-- Content here -->
+  <div class="jumbotron">
+    <div class="container lead">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
