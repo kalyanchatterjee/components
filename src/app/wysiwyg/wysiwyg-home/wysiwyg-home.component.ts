@@ -16,5 +16,6 @@ export class WysiwygHomeComponent implements OnInit {
 
   saveData() {
     console.log(this.model.editorData);
+    // TBD of course!
   }
 }
