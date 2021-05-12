@@ -3,9 +3,13 @@
     <ng-content select="header"></ng-content>
   </h5>
   <div class="card-body">
-    <h5 class="card-title"><ng-content select="title"></ng-content></h5>
+    <!-- Attrubute selector: cardTitle -->
+    <h5 class="card-title"><ng-content select="[cardTitle]"></ng-content></h5>
     <p class="card-text">
       <ng-content select="body"></ng-content>
     </p>
+    <a type="button" class="btn btn-primary" href="{{ button_url }}">
+      <ng-content select=".card-button"></ng-content>
+    </a>
   </div>
 </div>
