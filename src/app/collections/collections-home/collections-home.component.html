@@ -4,9 +4,32 @@
 <div class="ui grid">
   <div class="four wide column"></div>
   <div class="ui vertical fluid tabular menu">
-    <a routerLink="./" routerLinkActive="active">Biography</a>&nbsp;
-    <a routerLink="./companies" routerLinkActive="active">Companies</a>&nbsp;
-    <a routerLink="./partners" routerLinkActive="active">Partners</a>&nbsp;
+    <a
+      routerLink="./"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Biography</a
+    >&nbsp;|&nbsp;
+    <!-- You can also use the property-binding syntax -->
+    <a
+      [routerLink]="['./companies']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Companies</a
+    >&nbsp;|&nbsp;
+    <a
+      routerLink="./partners"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Partners</a
+    >&nbsp;|&nbsp;
+    <!-- Adding various elments to form a link -->
+    <a
+      [routerLink]="['./demo-link', 'Microsoft', 'Office']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Dead Link</a
+    >&nbsp;
   </div>
   <div class="twelve wide stretched column">
     <div class="ui segment">
