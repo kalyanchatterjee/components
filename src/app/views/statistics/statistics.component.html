@@ -1,0 +1,6 @@
+<div class="ui statistics">
+  <div class="statistic" *ngFor="let point of data">
+    <div class="value">{{ point.value | number: "":"en-CA" }}</div>
+    <div class="label">{{ point.label }}</div>
+  </div>
+</div>
