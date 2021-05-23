@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { WysiwygModule } from './wysiwyg/wysiwyg.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
@@ -20,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     // CollectionsModule,
     WysiwygModule,
     AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
